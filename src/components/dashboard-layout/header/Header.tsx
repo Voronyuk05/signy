@@ -7,7 +7,7 @@ import { Logo } from '../../ui/Logo/Logo';
 import { Nav } from '../../ui/nav/Nav';
 import Link from 'next/link';
 import { PrimaryButton } from '../../ui/Buttons/PrimaryButton';
-import { SecondaryButton } from '../../ui/Buttons/SecondaryButton';
+import { SecondaryButton } from '../../ui/Buttons/SecondaryButton'
 
 export function Header() {
     const [isChecked, setIsChecked] = useState(false)
