@@ -1,0 +1,76 @@
+.nav {
+    display: flex;
+    gap: 20px;
+    a:hover {
+        color: #1064E5;
+    }
+    @media screen and (max-width: 1200px) {
+        flex-direction: column;
+        font-size: 22px;
+        gap: 25px;
+        font-weight: 600;
+    }
+}
+
+.select {
+    width: 100px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    .arrow {
+        position: absolute;
+        width: 10px;
+        top: 10px;
+        right: 10px;
+        transition: 0.3s;
+    }
+    &:hover {
+        overflow: visible;
+        .arrow {
+            transform:rotate(-90deg);
+            transition: 0.3s;
+        } 
+    }
+    @media screen and (max-width: 1200px) {
+        width: 300px;
+        height: auto;
+        gap: 25px;
+        .arrow {
+            display: none;
+        }
+    }
+}
+
+.select_tel {
+    width: 150px;
+    height: 24px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    overflow: hidden;
+    .arrow {
+        position: absolute;
+        width: 10px;
+        top: 10px;
+        right: 10px;
+        transition: 0.3s;
+    }
+    &:hover {
+        overflow: visible;
+        .arrow {
+            transform:rotate(-90deg);
+            transition: 0.3s;
+        } 
+    }
+    @media screen and (max-width: 1200px) {
+        width: 300px;
+        height: auto;
+        gap: 25px;
+        .arrow {
+            display: none;
+        }
+    }
+}

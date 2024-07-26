@@ -1,0 +1,35 @@
+.pagintaion {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  .previous, .next {
+    width: 30px;
+    height: 30px;
+    background-color: #1064E5;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  li {
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  a {
+    font-size: 20px;
+  }
+  .active {
+    color: #1064E5;
+    transition: 0.3s;
+  }
+  .disabled {
+    background-color: #595A5B;
+    transition: 0.3s;
+  }
+}

@@ -1,0 +1,66 @@
+.advantages {
+    width: 100%;
+    min-height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container {
+        width: 95%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        padding: 35px;
+        gap: 55px;
+        .card {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            width: 320px;
+            gap: 20px;
+            .text {
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            .card {
+                width: 180px;
+                flex-direction: column;
+                .text {
+                    text-align: center;
+                    align-items: center;
+                    justify-content: center;
+                }   
+            }
+        }
+        @media screen and (max-width: 768px) {
+            flex-direction: column;
+            .card {
+                flex-direction: row;
+                width: 300px;
+                gap: 30px;
+                .text {
+                    text-align: start;
+                    align-items: flex-start;
+                }   
+            }
+        }
+        @media screen and (max-width: 420px) {
+            padding: 30px 10px 30px 10px;
+        }
+        @media screen and (max-width: 320px) {
+            padding: 30px 10px 30px 10px;
+            .card {
+                width: 240px;
+                gap: 15px;
+                img {
+                    width: 50px;
+                }
+            }
+        }
+    }
+}

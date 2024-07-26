@@ -1,0 +1,180 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    width: 95%;
+    padding: 35px 0px 15px 0px;
+    z-index: 9;
+    .panel {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+        width: 80%;
+        gap: 40px;
+        .cross {
+            display: none;
+        }
+        .auth {
+            display: flex;
+            flex-direction: row;
+            gap: 40px;
+            @media screen and (max-width: 1200px) {
+                flex-wrap: wrap;
+            }
+        }
+        .language {
+            width: 60px;
+            height: 24px;
+            position: relative;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+            .arrow {
+                position: absolute;
+                width: 10px;
+                top: 10px;
+                right: 10px;
+                transition: 0.3s;
+            }
+            
+            &:hover {
+                overflow: visible;
+                .arrow {
+                    transform:rotate(-90deg);
+                    transition: 0.3s;
+                } 
+                
+            }
+            @media screen and (max-width: 1200px) {
+                width: auto;
+                flex-direction: row;
+                gap: 20px;
+                .arrow {
+                    display: none;
+                } 
+            }
+        }
+        @media screen and (max-width: 1200px) {
+            z-index: 100;
+            height: 100vh;
+            width: 50vw;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 50px;
+            background-color: #fff;
+            position: fixed;
+            top: 0;
+            right: -1000px;
+            transition: 0.4s;
+            .cross {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 50px
+            }
+        }
+        @media screen and (max-width: 768px) {
+            width: 100vw;
+            .cross {
+                right: 30px
+            }
+        }
+        @media screen and (max-width: 380px) {
+            padding: 20px;
+            .cross {
+                display: block;
+                position: absolute;
+                top: 20px;
+                right: 20px
+            }
+        }
+        
+    }
+    .showed {
+        @media screen and (max-width: 1200px) {
+            transform: translateX(0%);
+            right: 0px;
+            transition: 0.4s;
+        }
+    }
+}
+
+.burger {
+    display: none;
+	opacity: 0;
+    z-index: 99;
+    @media screen and (max-width: 1200px) {					
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        justify-content: center;
+		opacity: 1;
+		position: relative;
+        width: 50px;
+		height: 50px;
+        border: 1px solid #1064E5;
+        border-radius: 6px;
+		cursor: pointer;
+		span,
+		&::before,
+		&::after {
+			left: 0;
+			height: 8%;
+			width: 60%;
+			transition: all 0.3s ease 0s;
+			background-color: #1064E5;
+		}
+
+		&::before,
+		&::after {
+			content: "";
+		}
+
+		&::before {
+			top: 0;
+		}
+
+		&::after {
+			bottom: 0;
+		}
+    }
+    @media screen and (max-width: 380px) {
+        width: 40px;
+		height: 40px;
+        span,
+        &::before,
+		&::after {
+			left: 0;
+			height: 6%;
+			width: 60%;
+		}
+    }
+}
+
+.checked {
+    @media screen and (max-width: 1200px) {
+        gap: 0px;
+        background-color: black;
+        & span {
+            transform: scale(0) translate(0, -50%);
+        }
+        &::before {
+            position: absolute;
+            width: 100%;
+            top: 50%;
+            transform: rotate(-45deg) translate(0, -50%);
+        }
+        &::after {
+            position: absolute;
+            width: 100%;
+            bottom: 50%;
+            transform: rotate(45deg) translate(0, 50%);
+        }  
+    }        
+    
+}

@@ -1,0 +1,45 @@
+.primary_button {
+    padding: 10px 30px 10px 30px;
+    border-radius: 30px;
+    background-color: #1064E5;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    border:  #1064E5 2px solid;
+    &:hover {
+        background-color: rgba($color: #000000, $alpha: 0);
+        color: black;
+        border: #1064E5 2px solid;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.secondary_button {
+    padding: 8px 30px 8px 30px;
+    border-radius: 30px;
+    background-color: rgba($color: #000000, $alpha: 0);
+    text-transform: uppercase;
+    font-weight: 700;
+    border: #1064E5 2px solid;
+    &:hover {
+        background-color: #1064E5;
+        color: white;
+    }
+    @media screen and (max-width: 768px) {
+        font-size: 14px;
+    }
+}
+
+.black {
+    color: #061224E5
+}
+
+.white {
+    color: #fff;
+}
+
+.grey {
+    color: rgba($color: #fff, $alpha: 0.3);
+}

@@ -1,0 +1,46 @@
+
+
+.wrapper_input {
+    height: 50px;
+    width: 400px;
+    position: relative;
+    .input {
+        height: 50px;
+        width: 400px;
+        padding: 10px;
+        border-radius: 37px;
+        border: 1px #1064E5 solid;
+        outline: none;
+    }  
+    .signal {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 15px;
+      bottom: 15px;
+    }
+    @media screen and (max-width: 768px) {
+      height: 50px;
+      .input {
+          height: 50px;
+          padding: 10px;
+      } 
+    }
+    @media screen and (max-width: 480px) {
+      width: 300px;
+      .input {
+        width: 300px;
+      } 
+    }
+    @media screen and (max-width: 320px) {
+      width: 250px;
+      .input {
+        height: 40px;
+        width: 250px;
+        padding: 10px;
+        border-radius: 37px;
+        border: 1px #1064E5 solid;
+        outline: none;
+      } 
+    }
+}

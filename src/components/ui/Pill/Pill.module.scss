@@ -1,0 +1,14 @@
+.pill {
+    gap: 0px;
+    border-radius: 23px;
+    opacity: 0px;
+    background-color: #E5E5E5;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 10px 5px 10px;
+    @media screen and (max-width: 540px) {
+        font-size: 12px;
+    }
+}

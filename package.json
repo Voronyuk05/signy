@@ -1,0 +1,39 @@
+{
+  "name": "signy",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@googlemaps/react-wrapper": "^1.1.35",
+    "@tanstack/react-query": "^5.51.1",
+    "@tanstack/react-query-devtools": "^5.51.1",
+    "axios": "^1.7.2",
+    "js-cookie": "^3.0.5",
+    "json-server": "^1.0.0-beta.1",
+    "nanoid": "^5.0.7",
+    "next": "^14.2.5",
+    "react": "^18.3.1",
+    "react-countup": "^6.5.3",
+    "react-dom": "^18.3.1",
+    "react-loader-spinner": "^6.1.6",
+    "react-paginate": "^8.2.0",
+    "sass": "^1.76.0",
+    "swiper": "^11.1.5"
+  },
+  "devDependencies": {
+    "@types/google.maps": "^3.55.11",
+    "@types/node": "^20",
+    "@types/react": "^18",
+    "@types/react-dom": "^18",
+    "eslint": "^8",
+    "eslint-config-next": "14.2.3",
+    "postcss": "^8",
+    "tailwindcss": "^3.4.1",
+    "typescript": "^5"
+  }
+}
